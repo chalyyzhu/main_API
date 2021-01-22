@@ -7,7 +7,7 @@ q = input("apa judul nya chok..|")
 
 r = requests.get("https://hujanapi.herokuapp.com/api/joox?query="+q+"&apikey="+api_key).json()
 
-+6281396061030
+
 filename = r["savename"]+"."+r["ext"]
 print("downloading....", filename)
 dl = requests.get(r["download_url"], allow_redirects=True)
